@@ -1,24 +1,34 @@
-# README
+# MobileCause Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+simple web-based application that allows users to create notes, and have a simple authentication interface with email confirmation
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+Clone the app
 
-* System dependencies
+```ruby
+git clone repo_url
+```
 
-* Configuration
+run the bundle to install all gems and dependencies
 
-* Database creation
+```ruby
+bundle install
+```
 
-* Database initialization
+and run this to init the database structure
 
-* How to run the test suite
+```ruby
+rails db:create
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+with this you can now start the application with
 
-* Deployment instructions
+```ruby
+rails s
+```
 
-* ...
+## Comments
+
+* the app is using ruby 2.4.0
