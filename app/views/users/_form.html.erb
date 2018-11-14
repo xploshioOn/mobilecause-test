@@ -1,0 +1,27 @@
+<%= simple_form_for @user do |f| %>
+<div class="row">
+  <%= f.input :username, wrapper_html: { class: 'col s12 l4' } %>
+</div>
+<div class="row">
+  <%= f.input :email, wrapper_html: { class: 'col s12 l4' } %>
+</div>
+<div class="row">
+  <%= f.input :password, wrapper_html: { class: 'col s12 l4' } %>
+</div>
+<div class="row">
+  <%= f.input :password_confirmation, wrapper_html: { class: 'col s12 l4' } %>
+</div>
+<div class="row">
+  <div class="col s12">
+    or <%= link_to "Sign In", login_path %> if you are already signed up
+  </div>
+</div>
+<div class="row">
+  <div class="col s12">
+    <%= button_tag( :class => "btn waves-effect waves-light red") do %>
+    Sign Up
+    <i class="material-icons right">send</i>
+    <% end %>
+  </div>
+</div>
+<% end %>
